@@ -62,4 +62,33 @@ Możemy to sprawdzić bezpośrednio w subsystem: 0x0003 WINDOWS_CUI
 
 <h3>5.NAGŁÓWEK_SEKCJI_OBRAZU</h3>
 
+Task 1:Ile sekcji ma plik Desktop\Samples\zmsuz3pinwl?
+Możemy to w łatwy sposób policzyć, jest to 7:
 
+![image](https://github.com/user-attachments/assets/bc1d5a8b-2167-4ad9-9009-c701e2bd4ce2)
+
+
+Task 2:Jakie są cechy sekcji .rsrc pliku  Desktop\Samples\zmsuz3pinwl
+Możemy to podejrzeć przechodząc do zakładki .rsrc
+
+![image](https://github.com/user-attachments/assets/8ac11e45-c2a1-43bb-9e59-f5fca9cb0df7)
+
+
+<h3>6.OPIS_IMPORTU_OBRAZU</h3>
+
+Task 1:Plik PE Desktop\Samples\redline importuje funkcję CreateWindowExW. Z którego pliku dll importuje tę funkcję?
+Już tłumaczę, przejdźmy sobie do (rozwiń zakładkę) User32.dll, zjedźając coraz to niżej możesz zobaczyć: 
+
+![image](https://github.com/user-attachments/assets/1c6d07c4-cece-43d1-9790-efbd5cf3f5d1)
+
+
+<h3>7.Pakowanie i identyfikacja spakowanych plików wykonywalnych</h3>
+
+Task 1:Który z plików na dołączonej maszynie wirtualnej w katalogu Desktop\Samples wydaje się być spakowanym plikiem wykonywalnym?
+Odpowiedźią jest: zmsuz3pinwl, ponieważ:
+
+Nietypowe nazwy sekcji
+Uprawnienia EXECUTE dla wielu sekcji
+Wysoka entropia, zbliżająca się do 8, w niektórych sekcjach.
+Istotna różnica między SizeOfRawData i Misc_VirtualSize niektórych sekcji PE
+Bardzo mało funkcji importu
